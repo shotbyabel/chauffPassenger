@@ -1,6 +1,7 @@
 import {App, Platform} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {HomePage} from './pages/home/home';
+import {PreferencesPage} from './pages/preferences/preferences';
 
 
 @App({
@@ -8,7 +9,7 @@ import {HomePage} from './pages/home/home';
   config: {} // http://ionicframework.com/docs/v2/api/config/Config/
 })
 export class MyApp {
-  rootPage: any = HomePage;
+  rootPage: any = PreferencesPage;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {

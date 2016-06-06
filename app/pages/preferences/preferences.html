@@ -1,13 +1,56 @@
-<!--
-  Generated template for the PreferencesPage page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-navbar *navbar>
-  <ion-title>preferences</ion-title>
+<ion-navbar class="nav-bottom" *navbar chauffme>
+  <ion-title>PREFERENCES</ion-title>
 </ion-navbar>
 
 <ion-content padding class="preferences">
+
+<ion-card class="shadow">
+  <ion-card-header>
+    Before your ride
+  </ion-card-header>
+
+    <ion-card-content>
+  
+      <button class="pref-btns" *ngFor="let item of prefsBeforeRide" outline item-right>
+      <!-- <ion-icon name="star"></ion-icon> -->
+        {{item.preference}}
+      </button>
+
+    </ion-card-content>
+</ion-card>
+
+<ion-card class="shadow">
+  <ion-card-header>
+    In the car
+  </ion-card-header>
+
+    <ion-card-content>
+  
+      <button class="pref-btns" *ngFor="let item of prefsInCar" outline item-right>
+      <!-- <ion-icon name="star"></ion-icon> -->
+        {{item.preference}}
+      </button>
+
+    </ion-card-content>
+</ion-card>
+
+<ion-card class="shadow">
+  <ion-card-header>
+    Drop off
+  </ion-card-header>
+
+    <ion-card-content>
+  
+      <button class="pref-btns" *ngFor="let item of prefsDropOff" outline item-right>
+      <!-- <ion-icon name="star"></ion-icon> -->
+        {{item.preference}}
+      </button>
+
+    </ion-card-content>
+</ion-card>
+
+      <button fab-center primary round>
+        <ion-icon name="md-arrow-round-forward"></ion-icon>
+      </button>
   
 </ion-content>
