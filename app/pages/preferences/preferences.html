@@ -2,55 +2,86 @@
   <ion-title>PREFERENCES</ion-title>
 </ion-navbar>
 
-<ion-content padding class="preferences">
+<ion-content padding class="preferences buttons-fab-page">
 
-<ion-card class="shadow">
-  <ion-card-header>
-    Before your ride
-  </ion-card-header>
 
-    <ion-card-content>
-  
-      <button class="pref-btns" *ngFor="let item of prefsBeforeRide" outline item-right>
-      <!-- <ion-icon name="star"></ion-icon> -->
-        {{item.preference}}
-      </button>
+<ion-row class="btn-row">
 
-    </ion-card-content>
-</ion-card>
+<div class="btn-size">
+  <button width-33 chauffyou round outline>
+    <ion-icon name="md-arrow-round-forward"></ion-icon>
+  </button>
+  <p>open doors</p>
+</div>
 
-<ion-card class="shadow">
-  <ion-card-header>
-    In the car
-  </ion-card-header>
+<div class="btn-size">
+  <button width-33 chauffyou round outline>
+    <ion-icon name="md-arrow-round-forward"></ion-icon>
+  </button>
+  <p>greetings</p>
+</div>
 
-    <ion-card-content>
-  
-      <button class="pref-btns" *ngFor="let item of prefsInCar" outline item-right>
-      <!-- <ion-icon name="star"></ion-icon> -->
-        {{item.preference}}
-      </button>
 
-    </ion-card-content>
-</ion-card>
+<div class="btn-size">
+  <button width-33 chauffyou round outline>
+    <ion-icon name="md-arrow-round-forward"></ion-icon>
+  </button>
+  <p>car temp</p>
+</div>  
 
-<ion-card class="shadow">
-  <ion-card-header>
-    Drop off
-  </ion-card-header>
+</ion-row>
 
-    <ion-card-content>
-  
-      <button class="pref-btns" *ngFor="let item of prefsDropOff" outline item-right>
-      <!-- <ion-icon name="star"></ion-icon> -->
-        {{item.preference}}
-      </button>
 
-    </ion-card-content>
-</ion-card>
+<ion-row class="btn-row">
 
-      <button fab-center primary round>
-        <ion-icon name="md-arrow-round-forward"></ion-icon>
-      </button>
-  
+<div class="btn-size">
+  <button width-33 chauffyou round outline>
+    <ion-icon name="md-arrow-round-forward"></ion-icon>
+  </button>
+  <p>no conversation</p>
+</div>
+
+<div class="btn-size">
+  <button width-33 chauffyou round outline>
+    <ion-icon name="md-arrow-round-forward"></ion-icon>
+  </button>
+  <p>luggage asst</p>
+</div>
+
+
+<div class="btn-size">
+  <button width-33 chauffyou round outline>
+    <ion-icon name="md-arrow-round-forward"></ion-icon>
+  </button>
+  <p>open doors</p>
+</div>  
+
+</ion-row>
+
+<ion-row class="btn-row">
+
+<div class="btn-size">
+  <button width-33 chauffyou round outline>
+    <ion-icon name="md-arrow-round-forward"></ion-icon>
+  </button>
+  <p>open doors</p>
+</div>
+
+<div class="btn-size">
+  <button width-33 chauffyou round outline>
+    <ion-icon name="md-arrow-round-forward"></ion-icon>
+  </button>
+  <p>water</p>
+</div>
+
+
+<div class="btn-size">
+  <button width-33 chauffyou round outline>
+    <ion-icon name="md-arrow-round-forward"></ion-icon>
+  </button>
+  <p>smoking</p>
+</div>  
+
+</ion-row>
+
 </ion-content>
