@@ -3,6 +3,8 @@ import {App, Platform, Nav} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {HomePage} from './pages/home/home';
 import {PreferencesPage} from './pages/preferences/preferences';
+import {RegisterPage} from './pages/register/register';
+
 
 
 // @App({
@@ -36,7 +38,8 @@ class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Chauff Passenger', component: HomePage },
-      { title: 'Preference', component: PreferencesPage }
+      { title: 'Preference', component: PreferencesPage },
+      { title: 'Register', component: RegisterPage }
     ];
 
   }
