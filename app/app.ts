@@ -4,6 +4,7 @@ import {StatusBar} from 'ionic-native';
 import {HomePage} from './pages/home/home';
 import {PreferencesPage} from './pages/preferences/preferences';
 import {RegisterPage} from './pages/register/register';
+import {TipPage} from './pages/tip/tip';
 
 
 
@@ -39,7 +40,8 @@ class MyApp {
     this.pages = [
       { title: 'Chauff Passenger', component: HomePage },
       { title: 'Preference', component: PreferencesPage },
-      { title: 'Register', component: RegisterPage }
+      { title: 'Register', component: RegisterPage },
+      { title: 'Tip', component: TipPage }
     ];
 
   }
